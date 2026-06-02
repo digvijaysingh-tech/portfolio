@@ -153,7 +153,7 @@
 
       ctx.beginPath();
       ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
-      ctx.fillStyle = 'rgba(124, 92, 255, 0.6)';
+      ctx.fillStyle = 'rgba(108, 92, 231, 0.7)';
       ctx.fill();
     }
 
@@ -164,8 +164,8 @@
         const dx = a.x - b.x, dy = a.y - b.y;
         const dist = Math.sqrt(dx * dx + dy * dy);
         if (dist < LINK_DIST) {
-          const alpha = (1 - dist / LINK_DIST) * 0.25;
-          ctx.strokeStyle = `rgba(33, 212, 253, ${alpha})`;
+          const alpha = (1 - dist / LINK_DIST) * 0.35;
+          ctx.strokeStyle = `rgba(255, 107, 157, ${alpha})`;
           ctx.lineWidth = 0.6;
           ctx.beginPath();
           ctx.moveTo(a.x, a.y);
