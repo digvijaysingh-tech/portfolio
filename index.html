@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Personal portfolio — interactive showcase of work, skills, and projects." />
-  <title>Portfolio</title>
+  <meta name="description" content="Digvijay Singh Shekhawat — Senior Salesforce Engineer. 11x Salesforce Certified, 5+ years building enterprise solutions across Service, Sales, and Experience Cloud." />
+  <title>Digvijay Singh Shekhawat — Senior Salesforce Engineer</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
@@ -12,17 +12,16 @@
 </head>
 <body>
   <canvas id="bg-canvas" aria-hidden="true"></canvas>
-  <div class="cursor" id="cursor" aria-hidden="true"></div>
-  <div class="cursor-dot" id="cursor-dot" aria-hidden="true"></div>
 
   <div class="scroll-progress" id="scroll-progress"></div>
 
   <nav class="nav" id="nav">
-    <a href="#home" class="nav-logo" data-cursor="hover">&lt;/&gt;</a>
+    <a href="#home" class="nav-logo" data-cursor="hover">DS<span class="dot">.</span></a>
     <ul class="nav-links">
       <li><a href="#about" data-cursor="hover">About</a></li>
       <li><a href="#skills" data-cursor="hover">Skills</a></li>
-      <li><a href="#projects" data-cursor="hover">Projects</a></li>
+      <li><a href="#experience" data-cursor="hover">Experience</a></li>
+      <li><a href="#certifications" data-cursor="hover">Certifications</a></li>
       <li><a href="#contact" data-cursor="hover">Contact</a></li>
     </ul>
     <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">
@@ -32,22 +31,24 @@
 
   <section class="hero" id="home">
     <div class="hero-content">
-      <p class="eyebrow reveal">Hello, world.</p>
+      <p class="eyebrow reveal">Senior Salesforce Engineer · Hyderabad, India</p>
       <h1 class="hero-title">
-        <span class="reveal-line"><span>I build things</span></span>
-        <span class="reveal-line"><span>for the <em>web</em>.</span></span>
+        <span class="reveal-line"><span>Digvijay Singh</span></span>
+        <span class="reveal-line"><span><em>Shekhawat</em></span></span>
       </h1>
       <p class="hero-sub reveal">
-        I'm a developer who loves crafting interactive, performant, and
-        thoughtfully designed digital experiences.
+        11x Salesforce Certified engineer with 5+ years building and scaling
+        enterprise-grade solutions across Service, Sales, and Experience Cloud.
+        I own platform stability, lead high-severity escalations, and mentor
+        engineers on the Salesforce platform.
       </p>
       <div class="hero-cta reveal">
-        <a href="#projects" class="btn btn-primary" data-cursor="hover">
-          <span>View my work</span>
+        <a href="#contact" class="btn btn-primary" data-cursor="hover">
+          <span>Get in touch</span>
           <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
         </a>
-        <a href="#contact" class="btn btn-ghost" data-cursor="hover">
-          <span>Get in touch</span>
+        <a href="#experience" class="btn btn-ghost" data-cursor="hover">
+          <span>See experience</span>
         </a>
       </div>
     </div>
@@ -66,22 +67,24 @@
       <div class="about-grid">
         <div class="about-text reveal">
           <p>
-            I'm a passionate developer who enjoys turning ideas into clean,
-            interactive products. I care about typography, motion, and the
-            small details that make an interface feel alive.
+            I'm a Senior Salesforce Engineer at <strong>Salesforce Inc.</strong>,
+            building scalable Apex and Lightning Web Component solutions in the
+            Service Cloud Org. I've contributed to <strong>Agentforce</strong>,
+            Experience Cloud, Salesforce Flows, and DevOps Center.
           </p>
           <p>
-            When I'm not coding, you'll find me exploring new design trends,
-            contributing to side projects, or learning whatever the web throws
-            at me next.
+            Across 5+ years, I've delivered enterprise CRM implementations,
+            led end-to-end CRM migrations, and become the go-to person for
+            highly escalated platform issues. I care about secure, performant
+            solutions and growing the engineers around me.
           </p>
         </div>
         <div class="about-card tilt reveal" data-cursor="hover">
           <div class="tilt-inner">
-            <div class="stat"><span class="num" data-count="50">0</span>+<p>Projects shipped</p></div>
-            <div class="stat"><span class="num" data-count="5">0</span>+<p>Years coding</p></div>
-            <div class="stat"><span class="num" data-count="12">0</span>+<p>Happy clients</p></div>
-            <div class="stat"><span class="num" data-count="∞">0</span><p>Cups of coffee</p></div>
+            <div class="stat"><span class="num" data-count="5">0</span>+<p>Years experience</p></div>
+            <div class="stat"><span class="num" data-count="11">0</span>x<p>Salesforce Certified</p></div>
+            <div class="stat"><span class="num" data-count="3">0</span><p>Salesforce Clouds</p></div>
+            <div class="stat"><span class="num" data-count="8">0</span><p>Engineers mentored</p></div>
           </div>
         </div>
       </div>
@@ -97,77 +100,174 @@
       <div class="skills-grid">
         <div class="skill-card reveal" data-cursor="hover">
           <div class="skill-icon">&lt;/&gt;</div>
-          <h3>Frontend</h3>
-          <p>HTML, CSS, JavaScript, React, Vue, and modern build tools.</p>
+          <h3>Languages</h3>
+          <p>Apex, Java, JavaScript, SOQL, SOSL.</p>
+        </div>
+        <div class="skill-card reveal" data-cursor="hover">
+          <div class="skill-icon">☁</div>
+          <h3>Salesforce Platforms</h3>
+          <p>Service Cloud, Sales Cloud, Experience Cloud, Agentforce.</p>
         </div>
         <div class="skill-card reveal" data-cursor="hover">
           <div class="skill-icon">{ }</div>
-          <h3>Backend</h3>
-          <p>Node.js, Python, REST &amp; GraphQL APIs, SQL &amp; NoSQL databases.</p>
+          <h3>Frameworks &amp; Dev</h3>
+          <p>LWC, Apex Classes &amp; Triggers, Async Apex (Batch, Future, Queueable, Schedulable), Flows.</p>
         </div>
         <div class="skill-card reveal" data-cursor="hover">
-          <div class="skill-icon">◐</div>
-          <h3>Design</h3>
-          <p>Figma, design systems, motion design, and accessible interfaces.</p>
+          <div class="skill-icon">⇄</div>
+          <h3>Integrations &amp; APIs</h3>
+          <p>REST, SOAP, Bulk API, Inbound/Outbound Callouts, SSO, CTI Integrations.</p>
         </div>
         <div class="skill-card reveal" data-cursor="hover">
-          <div class="skill-icon">⚡</div>
-          <h3>Tools</h3>
-          <p>Git, Docker, CI/CD, cloud platforms, and a healthy dose of curiosity.</p>
+          <div class="skill-icon">⛨</div>
+          <h3>Data &amp; Security</h3>
+          <p>Data Modeling, Profiles, Roles, Permission Sets, Sharing Rules, OWD, Reports &amp; Dashboards.</p>
+        </div>
+        <div class="skill-card reveal" data-cursor="hover">
+          <div class="skill-icon">⚙</div>
+          <h3>DevOps &amp; Tooling</h3>
+          <p>VS Code, DevOps Center, Change Sets, Workbench, Data Loader, Postman.</p>
+        </div>
+        <div class="skill-card reveal" data-cursor="hover">
+          <div class="skill-icon">◉</div>
+          <h3>Monitoring &amp; Support</h3>
+          <p>Debug &amp; Event Logs, Performance Analysis, Production Support, UAT, Splunk, Network Log Analysis.</p>
+        </div>
+        <div class="skill-card reveal" data-cursor="hover">
+          <div class="skill-icon">★</div>
+          <h3>Leadership</h3>
+          <p>Agile/Scrum, Sprint Planning, Code Reviews, Mentoring, Cross-functional Collaboration.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="section projects" id="projects">
+  <section class="section projects" id="experience">
     <div class="container">
       <div class="section-head reveal">
         <span class="section-num">03</span>
-        <h2 class="section-title">Selected work</h2>
+        <h2 class="section-title">Experience</h2>
       </div>
       <div class="projects-list">
+
         <article class="project reveal" data-cursor="hover">
           <div class="project-meta">
-            <span class="project-num">01</span>
-            <span class="project-tag">Web app</span>
+            <span class="project-num">Jun 2023 — Present</span>
+            <span class="project-tag">Hyderabad</span>
           </div>
-          <h3 class="project-title">Project Aurora</h3>
-          <p class="project-desc">
-            A real-time collaborative whiteboard with shared cursors,
-            multiplayer drawing, and offline-first sync.
-          </p>
+          <div class="project-body">
+            <h3 class="project-title">Senior Salesforce Engineer</h3>
+            <p class="project-company">Salesforce Inc.</p>
+            <p class="project-desc">
+              Service Cloud Org engineer driving platform stability, feature
+              enablement, and customer escalations.
+            </p>
+            <ul class="project-points">
+              <li>Built scalable Apex, LWC, and Salesforce Flow solutions across Service and Experience Cloud.</li>
+              <li>Implemented REST, SOAP, and Bulk API integrations for reliable data exchange with external systems.</li>
+              <li>Contributed to Agentforce capabilities — agent actions, prompts, and feature validation during releases.</li>
+              <li>Resolved high-severity escalations through deep analysis of Debug and Network logs.</li>
+              <li>Enforced org-level security &amp; governance — license management and SSO integrations.</li>
+              <li>Authored Knowledge Articles &amp; Known Issues with Product to improve customer self-service.</li>
+            </ul>
+          </div>
           <div class="project-stack">
-            <span>React</span><span>WebRTC</span><span>Node</span><span>Redis</span>
+            <span>Apex</span><span>LWC</span><span>Agentforce</span><span>Flows</span><span>SSO</span>
           </div>
         </article>
+
         <article class="project reveal" data-cursor="hover">
           <div class="project-meta">
-            <span class="project-num">02</span>
-            <span class="project-tag">Open source</span>
+            <span class="project-num">May 2021 — Jun 2023</span>
+            <span class="project-tag">Pune</span>
           </div>
-          <h3 class="project-title">Lumen UI</h3>
-          <p class="project-desc">
-            A lightweight component library focused on motion, accessibility,
-            and developer ergonomics. Used by 200+ teams.
-          </p>
+          <div class="project-body">
+            <h3 class="project-title">Senior Systems Engineer (Salesforce)</h3>
+            <p class="project-company">Infosys Ltd. · Switzerland-based MNC client</p>
+            <p class="project-desc">
+              Designed and delivered Sales &amp; Service Cloud solutions for a
+              global enterprise, working closely with business stakeholders.
+            </p>
+            <ul class="project-points">
+              <li>Translated business requirements into scalable Salesforce solutions using Apex, LWC, and declarative automation.</li>
+              <li>Developed Apex classes, triggers, async Apex (Batch, Future, Schedulable), and LWCs.</li>
+              <li>Implemented Salesforce security model — Profiles, Roles, OWD, Sharing Rules.</li>
+              <li>Optimized SOQL/SOSL queries for performance across large datasets.</li>
+              <li>Built REST integrations with inbound/outbound callouts; created reports &amp; dashboards.</li>
+              <li>Acted as technical point of contact for client discussions and clarifications.</li>
+            </ul>
+          </div>
           <div class="project-stack">
-            <span>TypeScript</span><span>CSS</span><span>Storybook</span>
+            <span>Apex</span><span>LWC</span><span>REST</span><span>SOQL</span><span>Change Sets</span>
           </div>
         </article>
+
         <article class="project reveal" data-cursor="hover">
           <div class="project-meta">
-            <span class="project-num">03</span>
-            <span class="project-tag">Experiment</span>
+            <span class="project-num">Aug 2020 — Apr 2021</span>
+            <span class="project-tag">Remote</span>
           </div>
-          <h3 class="project-title">Generative Field</h3>
-          <p class="project-desc">
-            A WebGL playground that turns audio input into reactive,
-            generative landscapes you can walk through.
-          </p>
+          <div class="project-body">
+            <h3 class="project-title">Salesforce Developer</h3>
+            <p class="project-company">Byju's — Think &amp; Learn Pvt. Ltd.</p>
+            <p class="project-desc">
+              End-to-end CRM migration from LeadSquared to Salesforce — Sales
+              Cloud implementation from scratch.
+            </p>
+            <ul class="project-points">
+              <li>Migrated legacy LeadSquared CRM to Salesforce, implementing Sales Cloud from scratch.</li>
+              <li>Designed data model — custom &amp; junction objects, relationships, record types, field dependencies.</li>
+              <li>Developed Apex classes, triggers, batch jobs, and LWCs supporting ecommerce workflows.</li>
+              <li>Built workflow rules, Process Builder automations, Flows, and email alerts.</li>
+              <li>Managed data migration with Data Loader and supported sandbox-to-production deployments.</li>
+            </ul>
+          </div>
           <div class="project-stack">
-            <span>Three.js</span><span>GLSL</span><span>Web Audio</span>
+            <span>Sales Cloud</span><span>Apex</span><span>LWC</span><span>Process Builder</span><span>Data Loader</span>
           </div>
         </article>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="section certifications" id="certifications">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="section-num">04</span>
+        <h2 class="section-title">Certifications &amp; Achievements</h2>
+      </div>
+      <div class="cert-grid">
+        <div class="cert-card reveal" data-cursor="hover">
+          <span class="cert-badge">11x</span>
+          <h3>Salesforce Certified</h3>
+          <p>Admin · PD1 · Service Cloud Consultant · Experience Cloud Consultant · Agentforce Specialist · &amp; more.</p>
+        </div>
+        <div class="cert-card reveal" data-cursor="hover">
+          <span class="cert-badge">★</span>
+          <h3>AI Now Tour 2024 — India</h3>
+          <p>Awarded for conducting trainings and contribution on new Salesforce products including <em>Agentforce</em>.</p>
+        </div>
+        <div class="cert-card reveal" data-cursor="hover">
+          <span class="cert-badge">↑</span>
+          <h3>Go-to for Escalations</h3>
+          <p>Recognized as the go-to engineer for highly escalated platform issues across teams.</p>
+        </div>
+        <div class="cert-card reveal" data-cursor="hover">
+          <span class="cert-badge">✓</span>
+          <h3>On-time Delivery</h3>
+          <p>Multiple appreciations from clients and teams for on-time deliverables with minimal rework.</p>
+        </div>
+        <div class="cert-card reveal" data-cursor="hover">
+          <span class="cert-badge">M.Tech</span>
+          <h3>BITS Pilani</h3>
+          <p>M.Tech in Software Engineering — Birla Institute of Technology &amp; Science, Pilani · Batch 2026.</p>
+        </div>
+        <div class="cert-card reveal" data-cursor="hover">
+          <span class="cert-badge">B.Tech</span>
+          <h3>Rajasthan Technical University</h3>
+          <p>B.Tech in Information Technology — Batch 2020.</p>
+        </div>
       </div>
     </div>
   </section>
@@ -175,26 +275,25 @@
   <section class="section contact" id="contact">
     <div class="container">
       <div class="section-head reveal">
-        <span class="section-num">04</span>
+        <span class="section-num">05</span>
         <h2 class="section-title">Contact</h2>
       </div>
       <div class="contact-inner reveal">
         <h3 class="contact-headline">
-          Have an idea? <em>Let's build it.</em>
+          Have a Salesforce challenge? <em>Let's solve it.</em>
         </h3>
         <p class="contact-sub">
-          I'm currently available for freelance and collaboration. Drop a line —
-          I respond within 24 hours.
+          Open to interesting Salesforce architecture, Agentforce, and platform
+          engineering conversations. I usually reply within 24 hours.
         </p>
-        <a href="mailto:hello@example.com" class="contact-mail" data-cursor="hover">
-          hello@example.com
+        <a href="mailto:heydigvijay.tech@gmail.com" class="contact-mail" data-cursor="hover">
+          heydigvijay.tech@gmail.com
           <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M7 7h10v10"/></svg>
         </a>
         <div class="socials">
-          <a href="#" data-cursor="hover">GitHub</a>
-          <a href="#" data-cursor="hover">LinkedIn</a>
-          <a href="#" data-cursor="hover">Twitter</a>
-          <a href="#" data-cursor="hover">Dribbble</a>
+          <a href="https://linkedin.com/in/digvijayskwt/" target="_blank" rel="noopener" data-cursor="hover">LinkedIn</a>
+          <a href="mailto:heydigvijay.tech@gmail.com" data-cursor="hover">Email</a>
+          <a href="tel:+918504905570" data-cursor="hover">+91 85049 05570</a>
         </div>
       </div>
     </div>
@@ -202,7 +301,7 @@
 
   <footer class="footer">
     <div class="container footer-inner">
-      <span>© <span id="year"></span> Portfolio. Built with HTML &amp; CSS.</span>
+      <span>© <span id="year"></span> Digvijay Singh Shekhawat. Built with HTML, CSS &amp; JS.</span>
       <a href="#home" data-cursor="hover">Back to top ↑</a>
     </div>
   </footer>
